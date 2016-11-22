@@ -5,6 +5,6 @@ $(function(){
 
   socket.on('badge', function(badge){
     var $img = $('<img src="'+badge.badge_id+'" alt="Nice Badge">');
-    $('body').prepend($img);
+    $('badge-wrapper').prepend($img);
   });
 });
